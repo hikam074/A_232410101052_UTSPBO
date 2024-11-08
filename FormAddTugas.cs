@@ -38,8 +38,8 @@ namespace PBO_UTS
                 NpgsqlParameter[] parameters = new NpgsqlParameter[]
                 
                 {
-                new NpgsqlParameter("@judul_tugas", tbxJudul),
-                new NpgsqlParameter("@deskripsi", tbxDesc),
+                new NpgsqlParameter("@judul_tugas", tbxJudul.Text),
+                new NpgsqlParameter("@deskripsi", tbxDesc.Text),
                 new NpgsqlParameter("@deadline", dtpDL.Value)
                 };
                 try
