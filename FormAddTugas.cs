@@ -37,6 +37,7 @@ namespace PBO_UTS
                 string query = "INSERT INTO tugas (judul_tugas, deskripsi, deadline) VALUES (@judul_tugas, @deskripsi, @deadline)";
                 NpgsqlParameter[] parameters = new NpgsqlParameter[]
                 
+
                 {
                 new NpgsqlParameter("@judul_tugas", tbxJudul.Text),
                 new NpgsqlParameter("@deskripsi", tbxDesc.Text),
